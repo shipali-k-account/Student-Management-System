@@ -12,13 +12,16 @@ A simple web-based application built with Flask and SQLite to manage student rec
 ✅ Delete Student Record  
 ✅ Display All Students in Table
 
-💻 Technologies Used
+🛠️ Technologies Used
 
-Python (Flask Framework)
-SQLite (Lightweight database)
-HTML5, CSS (Bootstrap)
-Jinja2 (Flask templating)
-Bootstrap
+🐍 Python
+
+🗃️ SQLite
+
+🌐 HTML5 & CSS (Bootstrap)
+
+🧩 Jinja2 (Flask Templating)
+
 
 🖥 Screenshots
 
