@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if student %}
+<table class="table table-bordered">
+    <tr>
+        <th>Roll</th><th>Name</th><th>S1</th><th>S2</th><th>S3</th><th>Total</th><th>Avg</th><th>Grade</th>
+    </tr>
+    <tr>
+        <td>{{ student[0] }}</td><td>{{ student[1] }}</td><td>{{ student[2] }}</td>
+        <td>{{ student[3] }}</td><td>{{ student[4] }}</td><td>{{ student[5] }}</td>
+        <td>{{ student[6] }}</td><td>{{ student[7] }}</td>
+    </tr>
+</table>
+{% elif students %}
+<table class="table table-bordered">
+    <tr>
+        <th>Roll</th><th>Name</th><th>S1</th><th>S2</th><th>S3</th><th>Total</th><th>Avg</th><th>Grade</th>
+    </tr>
+    {% for stu in students %}
+    <tr>
+        <td>{{ stu[0] }}</td><td>{{ stu[1] }}</td><td>{{ stu[2] }}</td>
+        <td>{{ stu[3] }}</td><td>{{ stu[4] }}</td><td>{{ stu[5] }}</td>
+        <td>{{ stu[6] }}</td><td>{{ stu[7] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No student found.</p>
+{% endif %}
+<a href="/" class="btn btn-secondary">Back</a>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<h4>Add Student</h4>
+<form method="POST" action="/add" class="row g-2 mb-4">
+    <input name="roll" placeholder="Roll No" class="form-control mb-2" required>
+    <input name="name" placeholder="Name" class="form-control mb-2" required>
+    <input name="s1" placeholder="Subject 1 Marks" class="form-control mb-2" required>
+    <input name="s2" placeholder="Subject 2 Marks" class="form-control mb-2" required>
+    <input name="s3" placeholder="Subject 3 Marks" class="form-control mb-2" required>
+    <button class="btn btn-success w-100">Add</button>
+</form>
+
+<h4>Search Student</h4>
+<form method="POST" action="/search" class="mb-4">
+    <input name="roll" placeholder="Enter Roll No" class="form-control mb-2" required>
+    <button class="btn btn-info w-100">Search</button>
+</form>
+
+<h4>Update Student</h4>
+<form method="POST" action="/update_form" class="mb-4">
+    <input name="roll" placeholder="Enter Roll No to Update" class="form-control mb-2" required>
+    <button class="btn btn-warning w-100">Update</button>
+</form>
+
+<h4>Delete Student</h4>
+<form method="POST" action="/delete" class="mb-4">
+    <input name="roll" placeholder="Enter Roll No to Delete" class="form-control mb-2" required>
+    <button class="btn btn-danger w-100">Delete</button>
+</form>
+
+<a href="/display" class="btn btn-dark w-100">Display All Students</a>
+{% endblock %}

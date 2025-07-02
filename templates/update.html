@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<h4>Update Student</h4>
+<form method="POST" action="/update" class="row g-2">
+    <input type="hidden" name="roll" value="{{ student[0] }}">
+    <input name="name" value="{{ student[1] }}" class="form-control mb-2">
+    <input name="s1" value="{{ student[2] }}" class="form-control mb-2">
+    <input name="s2" value="{{ student[3] }}" class="form-control mb-2">
+    <input name="s3" value="{{ student[4] }}" class="form-control mb-2">
+    <button class="btn btn-primary w-100">Update Student</button>
+</form>
+{% endblock %}

@@ -22,9 +22,9 @@ Bootstrap
 
 🖥 Screenshots
 
-![Home Page](screenshot/home.png)
+![Home Page](static/screenshot/home.png)
 
 
-![Display All](screenshot/display.png)
+![Display All](static/screenshot/display.png)
 
 
